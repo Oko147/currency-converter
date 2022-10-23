@@ -21,4 +21,23 @@
         return amount * dkk;
     }
   };
+
+  const init = () => {
+    formElement.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const resultElement = document.querySelector(".js-result");
+      const amountElement = document.querySelector(".js-amount");
+      const currencyChoose = document.querySelector(".js-currency");
+
+      const currency = currencyChoose.value;
+      const amount = +amountElement.value;
+
+      let result = calculateResult(amount, currency);
+
+      resultElement.innerHTML = `${result.toFixed(2)} ${currency}`;
+    });
+  };
+
+  init();
 }
