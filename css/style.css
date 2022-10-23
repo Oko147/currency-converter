@@ -12,6 +12,7 @@ html {
   font-family: "Arimo", sans-serif;
   letter-spacing: 1px;
   text-align: center;
+  background-image: url("../img/background.png");
 }
 
 .main {
@@ -29,6 +30,7 @@ html {
   box-shadow: #147147 0px 3px 5px 0px, #14714726 0px 3px 3px 1px;
   padding: 10px 15px;
   margin: 30px 25px;
+  background-color: #fff;
 }
 
 .form__legend {
