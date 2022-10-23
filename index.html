@@ -9,5 +9,48 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Currency Converter</title>
   </head>
-  <body class="body"></body>
+  <body class="body">
+    <main class="main">
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Konwerter walut</legend>
+          <p>
+            <label class="form__labelText">
+              Kwota do wymiany:
+              <input
+                class="form__field js-amount"
+                type="number"
+                min="0.01"
+                step="0.01"
+                required
+              />
+              zł
+              <div class="selectCurrency">
+                PLN
+                <i class="fa fa-arrow-right"></i>
+                <select class="js-currency" name="currency">
+                  <option value="GBP">GBP</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR" selected>EUR</option>
+                  <option value="DKK">DKK</option>
+                </select>
+              </div>
+            </label>
+          </p>
+          <hr />
+          <p>
+            <label class="form__labelText"
+              >Kurs: <strong class="exchangeRate js-exchangeRate"></strong
+            ></label>
+          </p>
+          <p>
+            <label class="form__labelText"
+              >Po przeliczeniu: <strong class="result js-result"></strong
+            ></label>
+          </p>
+          <button class="form__button">Przelicz</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>
