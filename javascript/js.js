@@ -6,18 +6,23 @@
     const gbp = 0.18;
     const usd = 0.21;
     const dkk = 1.55;
+    const exchangeRate = document.querySelector(".js-exchangeRate");
 
     switch (currency) {
       case "EUR":
+        exchangeRate.innerHTML = eur;
         return amount * eur;
 
       case "GBP":
+        exchangeRate.innerHTML = gbp;
         return amount * gbp;
 
       case "USD":
+        exchangeRate.innerHTML = usd;
         return amount * usd;
 
       case "DKK":
+        exchangeRate.innerHTML = dkk;
         return amount * dkk;
     }
   };
