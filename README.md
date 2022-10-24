@@ -1,6 +1,6 @@
 # Currency converter
 
-Simple currency converter made using html, css and javascript.
+Simple currency converter made using _html_, _css_ and _javascript_.
 
 ## How to use
 
